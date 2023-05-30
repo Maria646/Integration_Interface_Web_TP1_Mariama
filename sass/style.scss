@@ -1,0 +1,9 @@
+@use 'general';
+body{
+    @import 'header';
+    @import 'escalades';
+    @import 'galerie';
+    @import 'statistiques';
+    @import 'equipes';
+    @import 'mapsFormulaire';
+}

@@ -1,0 +1,64 @@
+.statistiques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container__statistiques{
+        max-width: 1000px;
+        height: 500px;
+        .flexGraphDonnees__statistiques{
+            display: flex;
+            .graphique__statistiques{
+                border: 2px solid  black;
+                border-radius: 100%;
+                width: 400px;
+                height: 350px;
+                img{
+                    border-radius: 50%;
+                    width: auto;
+                }
+            }
+            .donnees__statistiques{
+                width: 500px;
+                height: 400px;
+                padding: 5% 5% 5% 5%;
+                h2{
+                    margin-bottom: 10px;
+                }
+                p{
+                    margin-bottom: 40px;
+                }
+                .donneesChiffres__statistiques{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 40px;
+                   .nombreDeVu__statistiques{
+                    h3{
+    
+                    }
+                    .petitText{
+    
+                    }
+                    .petitText--green{
+    
+                    }
+                   }
+                   .nombreDeTelechargement__statistiques{
+                    h3{
+    
+                    }
+                    .petitText{
+    
+                    }
+                    .petitText--green{
+                    }
+                   }
+                }
+                .btnPlus__statistiques{
+                    padding: 1% 2% 1% 2%;
+                }
+                .btnPlus--green{
+                    &:hover{
+    
+                    }
+                }
+        }}}}

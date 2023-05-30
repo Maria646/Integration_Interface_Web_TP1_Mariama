@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body header .container__header {
+  max-width: 1000px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container__header .flexOne__header {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-left: 5px;
+}
+body header .container__header .flexOne__header .flexLogoText__header .logoText--header {
+  font-size: 20px;
+}
+body header .container__header .flexTwo__header .menuList__header {
+  list-style: none;
+  display: flex;
+}
+body header .container__header .flexTwo__header .menuList__header .menuListOne__header .sousMenuListOne__header {
+  display: none;
+}
+body header .container__header .flexTwo__header .menuList__header .menuListTwo__header .sousMenuListTwo__header {
+  display: none;
+}
+body .escalades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .escalades .container__escalades {
+  max-width: 1000px;
+  height: 500px;
+}
+body .escalades .container__escalades .description__escalades {
+  text-align: center;
+}
+body .escalades .container__escalades .flexTypesEscalades__escalades {
+  display: flex;
+  justify-content: space-between;
+}
+body .escalades .container__escalades .flexTypesEscalades__escalades .typesEscalades {
+  padding: 10% 3% 10% 3%;
+}
+body .galerie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .galerie .container__galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 10px;
+}
+body .galerie .container__galerie .imageOne__galerie {
+  border: 2px solid blue;
+  width: 300px;
+  height: 300px;
+}
+body .galerie .container__galerie .imageTwo__galerie {
+  border: 2px solid blue;
+  width: 300px;
+  height: 300px;
+}
+body .galerie .container__galerie .imageThree__galerie {
+  border: 2px solid blue;
+  width: 300px;
+  height: 300px;
+}
+body .galerie .container__galerie .imageFour__galerie {
+  border: 2px solid blue;
+  width: 300px;
+  height: 300px;
+}
+body .galerie .container__galerie .imageFive__galerie {
+  border: 2px solid blue;
+  width: 300px;
+  height: 300px;
+}
+body .galerie .container__galerie .imageSix__galerie {
+  width: 300px;
+  height: 300px;
+  border: 2px solid blue;
+}
+body .statistiques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .statistiques .container__statistiques {
+  max-width: 1000px;
+  height: 500px;
+}
+body .statistiques .container__statistiques .flexGraphDonnees__statistiques {
+  display: flex;
+}
+body .statistiques .container__statistiques .flexGraphDonnees__statistiques .graphique__statistiques {
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 400px;
+  height: 350px;
+}
+body .statistiques .container__statistiques .flexGraphDonnees__statistiques .graphique__statistiques img {
+  border-radius: 50%;
+  width: auto;
+}
+body .statistiques .container__statistiques .flexGraphDonnees__statistiques .donnees__statistiques {
+  width: 500px;
+  height: 400px;
+  padding: 5% 5% 5% 5%;
+}
+body .statistiques .container__statistiques .flexGraphDonnees__statistiques .donnees__statistiques h2 {
+  margin-bottom: 10px;
+}
+body .statistiques .container__statistiques .flexGraphDonnees__statistiques .donnees__statistiques p {
+  margin-bottom: 40px;
+}
+body .statistiques .container__statistiques .flexGraphDonnees__statistiques .donnees__statistiques .donneesChiffres__statistiques {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+body .statistiques .container__statistiques .flexGraphDonnees__statistiques .donnees__statistiques .btnPlus__statistiques {
+  padding: 1% 2% 1% 2%;
+}
+body .equipes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .equipes .container__equipes {
+  max-width: 1000px;
+  height: 500px;
+}
+body .equipes .container__equipes .description__equipes {
+  text-align: center;
+}
+body .equipes .container__equipes .flexEmployers__equipes {
+  display: flex;
+  justify-content: space-between;
+}
+body .equipes .container__equipes .flexEmployers__equipes .employers {
+  padding: 10% 3% 10% 3%;
+}
+body .formulaireMaps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .formulaireMaps .container__formulaireMaps .containerFormulaire__formulaireMaps {
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  max-width: 400px;
+  height: auto;
+  padding: 15% 15% 15% 15%;
+}
+body .formulaireMaps .container__formulaireMaps .containerFormulaire__formulaireMaps h2 {
+  color: rgb(44, 44, 44);
+  margin-bottom: 10%;
+}
+body .formulaireMaps .container__formulaireMaps .containerFormulaire__formulaireMaps p {
+  color: rgb(121, 121, 121);
+  margin-bottom: 10%;
+}
+body .formulaireMaps .container__formulaireMaps .containerFormulaire__formulaireMaps form .flexFormulaire__formulaireMaps {
+  display: flex;
+}
+body .formulaireMaps .container__formulaireMaps .containerFormulaire__formulaireMaps form .flexFormulaire__formulaireMaps input {
+  display: block;
+  margin-bottom: 5%;
+  padding: 2% 2% 2% 2%;
+}
+body .formulaireMaps .container__formulaireMaps .containerFormulaire__formulaireMaps form input {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 2% 2% 2% 2%;
+}
+body .formulaireMaps .container__formulaireMaps .containerFormulaire__formulaireMaps form textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 2% 2% 2% 2%;
+}
+body .formulaireMaps .container__formulaireMaps .containerFormulaire__formulaireMaps form button {
+  width: 100%;
+}

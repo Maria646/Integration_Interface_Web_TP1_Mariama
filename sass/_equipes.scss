@@ -1,0 +1,53 @@
+.equipes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container__equipes{
+        max-width: 1000px;
+        height: 500px;
+        .description__equipes{
+            text-align: center;
+            h2{
+
+            }
+            p{
+
+            }
+        }
+        .flexEmployers__equipes{
+            display: flex;
+            justify-content: space-between;
+            .employers{
+                padding: 10% 3% 10% 3%;
+            }
+            .employerOne__equipes{
+                .photoEmployerOne__equipes{
+                    img{
+
+                    }
+                }
+            }
+            .employerTwo__equipes{
+                .photoEmployerOne__equipes{
+                    img{
+
+                    }
+                }
+            }
+            .employerThree__equipes{
+                .photoEmployerOne__equipes{
+                    img{
+
+                    }
+                }
+            }
+            .employerFour__equipes{
+                .photoEmployerOne__equipes{
+                    img{
+
+                    }
+                }
+            }
+        }
+    }
+}

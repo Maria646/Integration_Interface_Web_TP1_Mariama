@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box; 
+}
+
+@mixin distanceForSections($width-section, $height-section, $padding-section,){
+    max-width: $width-section;
+    min-height: $height-section;
+    padding: $padding-section;
+    
+}
+
+@mixin centralisationForSections($display-section, $justityContent-section, $alignItem-section){
+    display: $display-section;
+    justify-content: $justityContent-section;
+    align-items: $alignItem-section;
+}

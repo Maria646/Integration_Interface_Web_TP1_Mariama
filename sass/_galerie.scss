@@ -1,0 +1,58 @@
+.galerie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container__galerie{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        gap: 10px;
+       .imageOne__galerie{
+        border: 2px solid blue;
+        width: 300px;
+        height: 300px;
+        img{
+
+        }
+       } 
+       .imageTwo__galerie{
+        border: 2px solid blue;
+        width: 300px;
+        height: 300px;
+        img{
+            
+        }
+       }
+       .imageThree__galerie{
+        border: 2px solid blue;
+        width: 300px;
+        height: 300px;
+        img{
+            
+        }
+       }
+       .imageFour__galerie{
+        border: 2px solid blue;
+        width: 300px;
+        height: 300px;
+        img{
+            
+        }
+       }
+       .imageFive__galerie{
+        border: 2px solid blue;
+        width: 300px;
+        height: 300px;
+        img{
+            
+        }
+       }
+       .imageSix__galerie{
+        width: 300px;
+        height: 300px;
+        border: 2px solid blue;
+        img{
+            
+        }
+       }
+    } 
+}

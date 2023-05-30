@@ -1,0 +1,50 @@
+.formulaireMaps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container__formulaireMaps{
+        .containerFormulaire__formulaireMaps{
+            background-color: rgb(233, 233, 233);
+            border-radius: 10px;
+            max-width: 400px;
+            height: auto;
+            padding: 15% 15% 15% 15%;
+            h2{
+                color: rgb(44, 44, 44);
+                margin-bottom: 10%;   
+            }
+            p{
+                color: rgb(121, 121, 121);
+                margin-bottom: 10%;
+            }
+            form{
+                .flexFormulaire__formulaireMaps{
+                    display: flex;
+                    input{
+                        display: block;
+                        margin-bottom: 5%;
+                        padding: 2% 2% 2% 2%;
+                        ::placeholder{
+
+                        }
+                    }
+                }
+                input{
+                    width: 100%;
+                    margin-bottom: 5%;
+                    padding: 2% 2% 2% 2%;
+                }
+                textarea{
+                    display: block;
+                    resize: none;
+                    width: 100%;
+                    margin-bottom: 5%;
+                    padding: 2% 2% 2% 2%;
+                }
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}

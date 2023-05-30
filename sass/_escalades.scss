@@ -1,0 +1,65 @@
+.escalades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       .container__escalades{
+        max-width: 1000px;
+        height: 500px;
+           .description__escalades{
+            text-align: center;
+            h2{
+
+            }
+            p{
+
+            }
+        }
+        .flexTypesEscalades__escalades{
+            display: flex;
+            justify-content: space-between;
+            .typesEscalades{
+                padding: 10% 3% 10% 3%;
+            }
+            .escaladeTypeOne__escalades{
+                .photoEscaladeTypeOne__equipes{
+                    img{
+
+                    }
+                }
+                h3{
+
+                }
+                p{
+
+                }
+            }
+            .escaladeTypeOne__escalades{
+                .photoEscaladeTypeOne__equipes{
+                    img{
+
+                    }
+                }
+                h3{
+
+                }
+                p{
+
+                }
+            }
+            .escaladeTypeOne__escalades{
+                .photoEscaladeTypeOne__equipes{
+                    img{
+
+                    }
+                }
+                h3{
+
+                }
+                p{
+
+                }
+            }
+
+        }
+    }
+}
