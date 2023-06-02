@@ -4,10 +4,9 @@
     box-sizing: border-box; 
 }
 
-@mixin distanceForSections($width-section, $height-section, $padding-section,){
+@mixin tailleForSections($width-section, $height-section){
     max-width: $width-section;
     min-height: $height-section;
-    padding: $padding-section;
     
 }
 

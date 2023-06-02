@@ -1,15 +1,14 @@
+@import "fonctions";
     header{
+        @include centralisationForSections(flex, center, center);
         .container__header{
-            max-width: 1000px;
-            height: 80px;
+            @include tailleForSections(1000px, 80px);
             display: flex;
             justify-content: space-between;
             align-items: center;
             .flexOne__header{
                 display: flex;
                 align-items: center;
-                margin-left: 5px;
-                margin-left: 5px;
                 .flexLogoIframe__header{
                     .logoIframe--header{
                     }

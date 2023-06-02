@@ -1,6 +1,8 @@
-@use 'general';
+@import 'fonctions';
 body{
     @import 'header';
+    @import 'banner';
+    @import 'rechercheTemoignage';
     @import 'escalades';
     @import 'galerie';
     @import 'statistiques';

@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body header .container__header {
   max-width: 1000px;
-  height: 80px;
+  min-height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,8 +24,6 @@ body header .container__header {
 body header .container__header .flexOne__header {
   display: flex;
   align-items: center;
-  margin-left: 5px;
-  margin-left: 5px;
 }
 body header .container__header .flexOne__header .flexLogoText__header .logoText--header {
   font-size: 20px;
@@ -29,6 +37,31 @@ body header .container__header .flexTwo__header .menuList__header .menuListOne__
 }
 body header .container__header .flexTwo__header .menuList__header .menuListTwo__header .sousMenuListTwo__header {
   display: none;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+body .banner .container__banner {
+  max-width: 1000px;
+  min-height: 100%;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .recherche .container__recherche .input__recherche {
+  display: block;
 }
 body .escalades {
   display: flex;
