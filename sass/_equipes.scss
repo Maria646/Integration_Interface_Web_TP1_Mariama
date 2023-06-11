@@ -1,51 +1,101 @@
+@import 'fonctions';
 .equipes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0% 5% 5% 5%;
+    @include centralisationAvecFlex(flex, center, center);
     .container__equipes{
-        max-width: 1000px;
-        height: 500px;
+        @include hauteurLargeur(1000px, 500px);
         .description__equipes{
             text-align: center;
             h2{
-
+                margin-bottom: 5%;
             }
             p{
 
             }
         }
         .flexEmployers__equipes{
-            display: flex;
-            justify-content: space-between;
+            @include centralisationAvecFlex(flex, center, none);
             .employers{
                 padding: 10% 3% 10% 3%;
             }
             .employerOne__equipes{
                 .photoEmployerOne__equipes{
+                    // @include hauteurLargeur(70%, 10%);
+                    @include border(2px solid black, 5%);
+                    margin-bottom: 10%;
                     img{
-
+                        @include hauteurLargeur(200px, 80px);
                     }
+                }
+                h4{
+                    margin-bottom: 10%;
+                }
+                h5{
+                    margin-bottom: 15%;
+                }
+                p{
+                }
+                i{
                 }
             }
             .employerTwo__equipes{
-                .photoEmployerOne__equipes{
+                .photoEmployerTwo__equipes{
+                    // @include hauteurLargeur(70%, 70%);
+                    @include border(2px solid black, 5%);
+                    margin-bottom: 10%;
                     img{
-
+                        @include hauteurLargeur(200px, 80px);
                     }
+                }
+                h4{
+                    margin-bottom: 10%;
+                }
+                h5{
+                    margin-bottom: 15%;
+                }
+                p{
+                }
+                i{
                 }
             }
             .employerThree__equipes{
-                .photoEmployerOne__equipes{
+                .photoEmployerThree__equipes{
+                    // @include hauteurLargeur(70%, 70%);
+                    @include border(2px solid black, 5%);
+                    margin-bottom: 10%;
                     img{
-
+                        @include hauteurLargeur(200px, 80px);
                     }
+                }
+                h4{
+                    margin-bottom: 10%;
+                }
+                h5{
+                    margin-bottom: 15%;
+                }
+                p{
+                }
+                i{
                 }
             }
             .employerFour__equipes{
-                .photoEmployerOne__equipes{
+                .photoEmployerFour__equipes{
+                    // @include hauteurLargeur(70%, 70%);
+                    @include border(2px solid black, 5%);
+                    margin-bottom: 10%;
                     img{
-
+                        @include hauteurLargeur(200px, 80px);
                     }
+                }
+                h4{
+                    margin-bottom: 10%;
+                }
+                h5{
+                    margin-bottom: 15%;
+                }
+                p{
+                }
+                i{
                 }
             }
         }

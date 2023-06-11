@@ -1,12 +1,12 @@
 @import 'fonctions';
 
 .banner{
-    @include centralisationForSections(flex, center, center);
-    @include tailleForSections(100%, 100vh);
-    overflow: hidden;
     .container__banner{
-       @include tailleForSections(1000px, 100%);
+        @include centralisationAvecFlex(flex, center, center);
+        @include hauteurLargeur(auto, auto);
         img{
+            max-width: 100%;
+            max-height: auto;
         }
     }
 }

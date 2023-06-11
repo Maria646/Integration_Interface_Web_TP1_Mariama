@@ -4,14 +4,23 @@
     box-sizing: border-box; 
 }
 
-@mixin tailleForSections($width-section, $height-section){
+@mixin hauteurLargeur($width-section, $height-section){
     max-width: $width-section;
     min-height: $height-section;
     
 }
 
-@mixin centralisationForSections($display-section, $justityContent-section, $alignItem-section){
+@mixin centralisationAvecFlex($display-section, $justityContent-section, $alignItem-section){
     display: $display-section;
     justify-content: $justityContent-section;
     align-items: $alignItem-section;
+}
+@mixin centralisationPourItemsSeul($margin-left, $margin-right){
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+
+@mixin border($borderWitdthColor, $borderRadius){
+    border: $borderWitdthColor;
+    border-radius: $borderRadius;
 }

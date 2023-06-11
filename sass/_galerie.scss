@@ -1,58 +1,80 @@
-.galerie{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .container__galerie{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 300px);
-        gap: 10px;
-       .imageOne__galerie{
-        border: 2px solid blue;
-        width: 300px;
-        height: 300px;
-        img{
+@import 'fonctions';
 
+.galerie{
+    padding: 5% 5% 5% 5%;
+    .container__galerie{
+        // @include border(2px solid blue, 0%);
+        @include hauteurLargeur(1300px, 100px);
+        @include centralisationPourItemsSeul(auto, auto);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:10px;
+        .images{
+            img{
+                width: 10px;
+            }
         }
-       } 
-       .imageTwo__galerie{
-        border: 2px solid blue;
-        width: 300px;
-        height: 300px;
+       .containerImageOne__galerie{
+        // @include border(2px solid yellow, 0%);
+        display: flex;
+        justify-content: end;
+        align-items: center;
         img{
-            
+            width: 250px;
+            height: 250px;
         }
        }
-       .imageThree__galerie{
-        border: 2px solid blue;
-        width: 300px;
-        height: 300px;
-        img{
-            
+       .containerImageTwoThree__galerie{
+        // @include border(2px solid  green, 0%);
+        .imageTwo__galerie{
+            // @include border(2px solid  orange, 0%);
+            display: flex;
+            grid-gap: 10px;
+            margin-bottom: 10px;
+            img{
+                justify-content: start;
+                align-items: center;
+                width: 500px;
+                height: 250px;
+            }
+            .containerImageThree__galerie{
+                // @include border(2px solid red, 0%);
+                align-self: end;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+            .containerImageFourFive__galerie{
+                // @include border(2px solid  blue, 0%);
+                display: flex;
+                grid-gap: 10px;
+                align-self: end;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+                .containerImageFive__galerie{
+                    // @include border(2px solid green, 0%);
+                    img{
+                        justify-content: start;
+                        align-items: center;
+                        width: 500px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+        .containerImageSix__galerie{
+            // @include border(2px solid  red, 0%);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            img{
+                width: 200px;
+                height: 300px;
+            }
         }
        }
-       .imageFour__galerie{
-        border: 2px solid blue;
-        width: 300px;
-        height: 300px;
-        img{
-            
-        }
-       }
-       .imageFive__galerie{
-        border: 2px solid blue;
-        width: 300px;
-        height: 300px;
-        img{
-            
-        }
-       }
-       .imageSix__galerie{
-        width: 300px;
-        height: 300px;
-        border: 2px solid blue;
-        img{
-            
-        }
-       }
-    } 
-}
+    }

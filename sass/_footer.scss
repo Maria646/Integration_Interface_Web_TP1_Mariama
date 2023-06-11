@@ -1,0 +1,51 @@
+@import 'fonctions';
+
+.footer{
+    // @include border(2px solid red, 5%);
+    padding: 5% 5% 5% 5%;
+    .container__footer{
+        // @include border(2px solid green, 5%);
+        @include hauteurLargeur(1200px, auto);
+        @include centralisationAvecFlex(flex, space-between, center);
+        @include centralisationPourItemsSeul(auto, auto);
+        .auteur__footer{
+            // @include border(2px solid red, 5%);
+            @include hauteurLargeur(auto, auto);
+            h5{
+
+            }
+        }
+        .reseaux-sociaux__footer{
+            // @include border(2px solid blue, 5%);
+            @include hauteurLargeur(auto, auto);
+            i{
+
+            }
+        }
+        .coordonnees__footer{
+            // @include border(2px solid yellow, 5%);
+            @include centralisationAvecFlex(flex, center, center);
+            @include hauteurLargeur(auto, auto);
+            .telephonneCoordonnees__footer{
+                margin-left: 10px;
+                margin-right: 10px;
+                i{
+
+                }
+                h6{
+
+                }
+            }
+            .emailCoordonnees__footer{
+                margin-left: 10px;
+                margin-right: 10px;
+                i{
+
+                }
+                h6{
+
+                }
+            }
+        } 
+    }
+}
