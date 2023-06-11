@@ -1,24 +1,37 @@
-@import 'fonctions';
-.avantFooter{
-    padding: 5% 5% 5% 5%;
-    @include centralisationAvecFlex(flex, center, center);
-    height: 150px;
-    .container__avantFooter{
-        .logo__avantFooter{
-            border: 2px solid white;
-            @include hauteurLargeur(100px, 40px);
-            @include centralisationPourItemsSeul(auto, auto);
-            margin-bottom: 20px;
-            img{
-                @include hauteurLargeur(100px, 10px);
-            }
-        }
-        .menu-list__avantFooter{
-            display: flex;
-            list-style: none;
-                li{
-                    @include centralisationPourItemsSeul(20px, 20px);
-                }
-        }
+@import "fonctions";
+
+%logo-styles {
+  border: 2px solid white;
+  @include hauteurLargeur(100px, 40px);
+  @include centralisationPourItemsSeul(auto, auto);
+  margin-bottom: 20px;
+
+  img {
+    @include hauteurLargeur(100px, 10px);
+  }
+}
+
+%list-item-styles {
+  @include centralisationPourItemsSeul(20px, 20px);
+}
+
+.avantFooter {
+  padding: 5%;
+  @include centralisationAvecFlex(flex, center, center);
+  height: 150px;
+
+  .container__avantFooter {
+    .logo__avantFooter {
+      @extend %logo-styles;
     }
+
+    .menu-list__avantFooter {
+      display: flex;
+      list-style: none;
+
+      li {
+        @extend %list-item-styles;
+      }
+    }
+  }
 }

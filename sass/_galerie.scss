@@ -1,80 +1,107 @@
 @import 'fonctions';
 
-.galerie{
-    padding: 5% 5% 5% 5%;
-    .container__galerie{
-        // @include border(2px solid blue, 0%);
-        @include hauteurLargeur(1300px, 100px);
-        @include centralisationPourItemsSeul(auto, auto);
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap:10px;
-        .images{
-            img{
-                width: 10px;
-            }
-        }
-       .containerImageOne__galerie{
-        // @include border(2px solid yellow, 0%);
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        img{
-            width: 250px;
-            height: 250px;
-        }
-       }
-       .containerImageTwoThree__galerie{
-        // @include border(2px solid  green, 0%);
-        .imageTwo__galerie{
-            // @include border(2px solid  orange, 0%);
-            display: flex;
-            grid-gap: 10px;
-            margin-bottom: 10px;
-            img{
-                justify-content: start;
-                align-items: center;
-                width: 500px;
-                height: 250px;
-            }
-            .containerImageThree__galerie{
-                // @include border(2px solid red, 0%);
-                align-self: end;
-                img{
-                    width: 150px;
-                    height: 150px;
-                }
-            }
-        }
-            .containerImageFourFive__galerie{
-                // @include border(2px solid  blue, 0%);
-                display: flex;
-                grid-gap: 10px;
-                align-self: end;
-                img{
-                    width: 150px;
-                    height: 150px;
-                }
-                .containerImageFive__galerie{
-                    // @include border(2px solid green, 0%);
-                    img{
-                        justify-content: start;
-                        align-items: center;
-                        width: 500px;
-                        height: 250px;
-                    }
-                }
-            }
-        }
-        .containerImageSix__galerie{
-            // @include border(2px solid  red, 0%);
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            img{
-                width: 200px;
-                height: 300px;
-            }
-        }
-       }
+%container-styles {
+  @include hauteurLargeur(auto, auto);
+}
+
+%flex-styles {
+  display: flex;
+}
+
+%image-styles {
+  @include hauteurLargeur(10px, none);
+}
+
+%image-size {
+  @include hauteurLargeur(250px, 250px);
+}
+
+%image-grid-size {
+  @include hauteurLargeur(500px, 250px);
+}
+
+%small-image-size {
+  @include hauteurLargeur(150px, 150px);
+}
+
+%big-image-size {
+  @include hauteurLargeur(200px, 300px);
+}
+
+.galerie {
+  padding: 0% 5% 5% 5%;
+
+  .container__galerie {
+    @extend %container-styles;
+    border: 2px solid pink;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    .images {
+      img {
+        @extend %image-styles;
+      }
     }
+
+    .containerImageOne__galerie {
+      @extend %flex-styles;
+      justify-content: flex-end;
+      align-items: center;
+
+      img {
+        @extend %image-size;
+      }
+    }
+
+    .containerImageTwoThree__galerie {
+      .imageTwo__galerie {
+        @extend %flex-styles;
+        grid-gap: 10px;
+        margin-bottom: 10px;
+
+        img {
+          justify-content: flex-start;
+          align-items: center;
+          @extend %image-grid-size;
+        }
+
+        .containerImageThree__galerie {
+          align-self: flex-end;
+
+          img {
+            @extend %small-image-size;
+          }
+        }
+      }
+
+      .containerImageFourFive__galerie {
+        @extend %flex-styles;
+        grid-gap: 10px;
+        align-self: flex-end;
+
+        img {
+          @extend %small-image-size;
+        }
+
+        .containerImageFive__galerie {
+          img {
+            justify-content: flex-start;
+            align-items: center;
+            @extend %image-grid-size;
+          }
+        }
+      }
+    }
+
+    .containerImageSix__galerie {
+      @extend %flex-styles;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        @extend %big-image-size;
+      }
+    }
+  }
+}

@@ -1,69 +1,68 @@
 @import 'fonctions';
 
-.escalades{
-    @include centralisationAvecFlex(flex, center, center);
-    padding: 5% 5% 5% 5%;
-       .container__escalades{
-        @include hauteurLargeur(1000px, auto);
-           .description__escalades{
-            text-align: center;
-            h2{
-                margin-bottom: 5%;
-            }
-            p{
-                margin-bottom: 5%;
-            }
-        }
-        .flexTypesEscalades__escalades{
-            @include centralisationAvecFlex(flex, center, center);
-            .typesEscalades{
-                text-align: center;
-            }
-            .escaladeTypeOne__escalades{
-                .photoEscaladeTypeOne__equipes{
-                    margin-bottom: 10%;
-                    img{
-                        @include hauteurLargeur(20%, 50%);
-                        @include border(none, 50%);
-                    }
-                }
-                h3{
-                    margin-bottom: 10%;
-                }
-                p{
+%escalades-flex {
+  @include centralisationAvecFlex(flex, center, center);
+}
 
-                }
-            }
-            .escaladeTypeTwo__escalades{
-                .photoEscaladeTypeTwo__equipes{
-                    margin-bottom: 10%;
-                    img{
-                        @include hauteurLargeur(20%, 50%);
-                        @include border(none, 50%)
-                    }
-                }
-                h3{
-                    margin-bottom: 10%;
-                }
-                p{
-                }
-            }
-            .escaladeTypeThree__escalades{
-                .photoEscaladeTypeThree__equipes{
-                    margin-bottom: 10%;
-                    img{
-                        @include hauteurLargeur(20%, 50%);
-                        @include border(none, 50%)
-                    }
-                }
-                h3{
-                    margin-bottom: 10%;
-                }
-                p{
+%photo-escalade {
+  margin-bottom: 10%;
 
-                }
-            }
+  img {
+    @include hauteurLargeur(20%, 50%);
+    @include border(none, 50%);
+  }
+}
 
-        }
+%escalade-info {
+  h3 {
+    margin-bottom: 10%;
+  }
+
+  p {
+    // Styles
+  }
+}
+
+.escalades {
+  @extend %escalades-flex;
+  padding: 5%;
+
+  .container__escalades {
+    @include hauteurLargeur(1000px, auto);
+
+    .description__escalades {
+      text-align: center;
+
+      h2 {
+        margin-bottom: 5%;
+      }
+
+      p {
+        margin-bottom: 5%;
+      }
     }
+
+    .flexTypesEscalades__escalades {
+      @extend %escalades-flex;
+
+      .typesEscalades {
+        text-align: center;
+      }
+
+      .escaladeTypeOne__escalades {
+        @extend %escalade-info;
+        @extend %photo-escalade;
+      }
+
+      .escaladeTypeTwo__escalades {
+        @extend %escalade-info;
+        @extend %photo-escalade;
+      }
+
+      .escaladeTypeThree__escalades {
+        @extend %escalade-info;
+        @extend %photo-escalade;
+      }
+    }
+  }
 }

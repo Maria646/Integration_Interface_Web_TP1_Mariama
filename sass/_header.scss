@@ -1,94 +1,104 @@
 @import 'fonctions';
-    header{
-        // padding: 5% 5% 2% 5%;
-        .container__header{
-            @include hauteurLargeur(1300px, 150px);
-            @include centralisationAvecFlex(flex, space-between, center);
-            margin-left: auto;
-            margin-right: auto;
-            .flexOne__header{
-                @include centralisationAvecFlex(flex, space-between, center);
-                .flexLogoIframe__header{
-                    max-width: 80px;
-                    margin-left: 8px;
-                    margin-right: 8px;
-                    img{
-                        max-width: 80px;
-                        max-height: 70px;
-                        @include border(2px solid white, 50%);
-                    }
-                }
-                .flexLogoText__header{
-                    margin-left: 8px;
-                    margin-right: 8px;
-                    .logoText--header{
-                        font-size: 10px;
-                    }
-                }
-            }
-            .flexTwo__header{
-                .menuList__header{
-                    @include centralisationAvecFlex(flex, space-between, center);
-                    list-style: none;
-                    a{
-                        text-decoration: none;
-                        color: black;
-                    }
-                    .menuListOne__header{
-                        margin-left: 30px;
-                        margin-right: 30px;
-                        a{
-                        }
-                        i{
-        
-                        }
-                        .sousMenuListOne__header{
-                            position: relative;
-                            display: none;
-                            list-style: none;
-                            li{
-                            }
-                        }
-                        .sousMenuListOne__header.open{
-                                position: absolute;
-                                display: block;
-                                right: 530px;
-                        }
-                    }
-                    .menuListTwo__header{
-                        margin-left: 30px;
-                        margin-right: 30px;
-                        a{
-                        }
-                        i{
-                        }
-                        .sousMenuListTwo__header{
-                            position: relative;
-                            display: none;
-                            list-style: none;
-                            li{
-                            }
-                        }
-                        .sousMenuListTwo__header.open{
-                            position: absolute;
-                            display: block;
-                            right: 390px;
-                    }
-                    }
-                    .menuListThree__header{
-                        margin-left: 30px;
-                        margin-right: 30px;
-                        a{
-                        }
-                    }
-                    .menuListFour__header{
-                        margin-left: 30px;
-                        margin-right: 30px;
-                        a{
-                        }
-                    }
-        
-                }
-            }
+
+header {
+  .container__header {
+    @include hauteurLargeur(1300px, 150px);
+    @include centralisationAvecFlex(flex, space-between, center);
+    @include centralisationPourItemsSeul(auto, auto);
+    .flexOne__header {
+      @include centralisationAvecFlex(flex, space-between, center);
+      .flexLogoIframe__header {
+        max-width: 80px;
+        @include centralisationPourItemsSeul(8px, 8px);
+        img {
+          @include hauteurLargeur(80px, 70px);
+          @include border(2px solid white, 50%);
         }
+      }
+
+      .flexLogoText__header {
+        @include centralisationPourItemsSeul(8px, 8px);
+        .logoText--header {
+          font-size: 10px;
+        }
+      }
     }
+
+    .flexTwo__header {
+
+      .menuList__header {
+        @include centralisationAvecFlex(flex, space-between, center);
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            color: blue;
+          }
+        }
+
+        .menuListOne__header {
+        @include centralisationPourItemsSeul(30px, 30px);
+
+          a {}
+
+          i {}
+
+          .sousMenuListOne__header {
+            position: relative;
+            display: none;
+            list-style: none;
+
+            li {}
+          }
+
+          &.open {
+            position: absolute;
+            display: block;
+            right: 530px;
+          }
+        }
+
+        .menuListTwo__header {
+            @include centralisationPourItemsSeul(30px, 30px);
+
+          a {}
+
+          i {}
+
+          .sousMenuListTwo__header {
+            position: relative;
+            display: none;
+            list-style: none;
+
+            li {}
+          }
+
+          &.open {
+            position: absolute;
+            display: block;
+            right: 390px;
+          }
+        }
+
+        .menuListThree__header {
+            @include centralisationPourItemsSeul(30px, 30px);
+
+          a {
+            font-weight: bold;
+          }
+        }
+
+        .menuListFour__header {
+            @include centralisationPourItemsSeul(30px, 30px);
+
+          a {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

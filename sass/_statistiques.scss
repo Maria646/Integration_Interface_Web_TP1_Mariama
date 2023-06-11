@@ -1,58 +1,121 @@
 @import "fonctions";
-.statistiques{
-    @include centralisationAvecFlex(flex, center, center);
-    padding: 5% 5% 5% 5%;
-    .container__statistiques{
-        @include hauteurLargeur(1000px, 500px);
-        .flexGraphDonnees__statistiques{
-            @include centralisationAvecFlex(flex, none, none);
-            .graphique__statistiques{
-                @include hauteurLargeur(500px, 350px);
-                img{
-                    border-radius: 50%;
-                    max-width: 400px;
-                }
+
+%flex-center {
+  @include centralisationAvecFlex(flex, center, center);
+}
+
+%padding {
+  padding: 5%;
+}
+
+%container-styles {
+  @include hauteurLargeur(1000px, 500px);
+}
+
+%flex-styles {
+  @include centralisationAvecFlex(flex, space-between, none);
+}
+
+%graph-styles {
+  @include hauteurLargeur(500px, 350px);
+
+  img {
+    border-radius: 50%;
+    max-width: 400px;
+  }
+}
+
+%data-styles {
+  @include hauteurLargeur(500px, 400px);
+  padding: 5%;
+
+  h2 {
+    margin-bottom: 5%;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+%flex-space-between {
+  @include centralisationAvecFlex(flex, space-between, none);
+}
+
+%number-styles {
+  margin-bottom: 40px;
+
+  h3 {
+  }
+
+  .petitText {
+  }
+
+  .petitText--green {
+  }
+}
+
+%button-styles {
+  padding: 1% 2%;
+
+  &:hover {
+  }
+}
+
+.statistiques {
+  @extend %flex-center;
+  @extend %padding;
+
+  .container__statistiques {
+    @extend %container-styles;
+
+    .flexGraphDonnees__statistiques {
+      @extend %flex-styles;
+
+      .graphique__statistiques {
+        @extend %graph-styles;
+        border: 2px solid red;
+      }
+
+      .donnees__statistiques {
+        @extend %data-styles;
+        border: 2px solid red;
+        .donneesChiffres__statistiques {
+          @extend %flex-space-between;
+          @extend %number-styles;
+
+          .nombreDeVu__statistiques {
+            h3 {
             }
-            .donnees__statistiques{
-                @include hauteurLargeur(500px, 400px);
-                padding: 5% 5% 5% 5%;
-                h2{
-                    margin-bottom: 5%;
-                }
-                p{
-                    margin-bottom: 40px;
-                }
-                .donneesChiffres__statistiques{
-                    @include centralisationAvecFlex(flex, space-between, none);
-                    margin-bottom: 40px;
-                   .nombreDeVu__statistiques{
-                    h3{
-    
-                    }
-                    .petitText{
-    
-                    }
-                    .petitText--green{
-    
-                    }
-                   }
-                   .nombreDeTelechargement__statistiques{
-                    h3{
-    
-                    }
-                    .petitText{
-    
-                    }
-                    .petitText--green{
-                    }
-                   }
-                }
-                .btnPlus__statistiques{
-                    padding: 1% 2% 1% 2%;
-                }
-                .btnPlus--green{
-                    &:hover{
-    
-                    }
-                }
-        }}}}
+
+            .petitText {
+            }
+
+            .petitText--green {
+            }
+          }
+
+          .nombreDeTelechargement__statistiques {
+            h3 {
+            }
+
+            .petitText {
+            }
+
+            .petitText--green {
+            }
+          }
+        }
+
+        .btnPlus__statistiques {
+          @extend %button-styles;
+        }
+
+        .btnPlus--green {
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+}
