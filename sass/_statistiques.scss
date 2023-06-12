@@ -9,15 +9,15 @@
 }
 
 %container-styles {
-  @include hauteurLargeur(1000px, 500px);
+  @include hauteurLargeur(1300px, 500px);
 }
 
 %flex-styles {
-  @include centralisationAvecFlex(flex, space-between, none);
+  @include centralisationAvecFlex(flex, space-between, center);
 }
 
 %graph-styles {
-  @include hauteurLargeur(500px, 350px);
+  @include hauteurLargeur(500px, 400px);
 
   img {
     border-radius: 50%;
@@ -67,19 +67,18 @@
   @extend %padding;
 
   .container__statistiques {
-    @extend %container-styles;
-
+    width: 900px;
+    height: auto;
     .flexGraphDonnees__statistiques {
       @extend %flex-styles;
 
       .graphique__statistiques {
         @extend %graph-styles;
-        border: 2px solid red;
       }
 
       .donnees__statistiques {
         @extend %data-styles;
-        border: 2px solid red;
+
         .donneesChiffres__statistiques {
           @extend %flex-space-between;
           @extend %number-styles;
@@ -118,4 +117,134 @@
       }
     }
   }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .statistiques {
+    @include centralisationAvecFlex(flex, center, center);
+    padding: 5%;
+    .container__statistiques {
+      width: 900px;
+      height: auto;
+      .flexGraphDonnees__statistiques {
+        display: block;
+        justify-content: center;
+        align-items: center;
+  
+        .graphique__statistiques {
+          width: auto;
+          text-align: center;
+          img{
+            width: 400px;
+          }
+        }
+  
+        .donnees__statistiques {
+          width: 100%;
+  
+          .donneesChiffres__statistiques {
+            @include centralisationAvecFlex(flex, space-between, none);
+            margin-bottom: 40px;
+            .nombreDeVu__statistiques {
+              h3 {
+              }
+  
+              .petitText {
+              }
+  
+              .petitText--green {
+              }
+            }
+  
+            .nombreDeTelechargement__statistiques {
+              h3 {
+              }
+  
+              .petitText {
+              }
+  
+              .petitText--green {
+              }
+            }
+          }
+  
+          .btnPlus__statistiques {
+            padding: 1% 2%;
+          }
+  
+          .btnPlus--green {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 450px) {
+  .statistiques {
+    @include centralisationAvecFlex(flex, center, center);
+    padding: 5%;
+    .container__statistiques {
+      width: 900px;
+      height: auto;
+      .flexGraphDonnees__statistiques {
+        display: block;
+        justify-content: center;
+        align-items: center;
+  
+        .graphique__statistiques {
+          width: auto;
+          text-align: center;
+          img{
+            width: 300px;
+          }
+        }
+  
+        .donnees__statistiques {
+          width: 100%;
+  
+          .donneesChiffres__statistiques {
+            @include centralisationAvecFlex(flex, space-between, none);
+            margin-bottom: 40px;
+            .nombreDeVu__statistiques {
+              h3 {
+              }
+  
+              .petitText {
+              }
+  
+              .petitText--green {
+              }
+            }
+  
+            .nombreDeTelechargement__statistiques {
+              h3 {
+              }
+  
+              .petitText {
+              }
+  
+              .petitText--green {
+              }
+            }
+          }
+  
+          .btnPlus__statistiques {
+            padding: 1% 2%;
+          }
+  
+          .btnPlus--green {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+  }
+  
 }

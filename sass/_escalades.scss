@@ -66,3 +66,51 @@
     }
   }
 }
+
+
+
+@media only screen and (max-width: 400px) {
+  .escalades {
+    @extend %escalades-flex;
+    padding: 5%;
+  
+    .container__escalades {
+      @include hauteurLargeur(1000px, auto);
+  
+      .description__escalades {
+        text-align: center;
+  
+        h2 {
+          margin-bottom: 5%;
+        }
+  
+        p {
+          margin-bottom: 30%;
+        }
+      }
+  
+      .flexTypesEscalades__escalades {
+        display: block;
+  
+        .typesEscalades {
+          text-align: center;
+        }
+  
+        .escaladeTypeOne__escalades {
+          @extend %escalade-info;
+          @extend %photo-escalade;
+        }
+  
+        .escaladeTypeTwo__escalades {
+          @extend %escalade-info;
+          @extend %photo-escalade;
+        }
+  
+        .escaladeTypeThree__escalades {
+          @extend %escalade-info;
+          @extend %photo-escalade;
+        }
+      }
+    }
+  }
+}

@@ -60,3 +60,60 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .recherche {
+    @include hauteurLargeur(100%, 400px);
+  
+    .container__recherche {
+      @include hauteurLargeur(800px, 10px);
+      @include centralisationPourItemsSeul(auto, auto);
+      padding: 10%;
+      display: block;
+  
+      p {
+        text-align: center;
+      }
+  
+      .input__recherche {
+        @include hauteurLargeur(250px, none);
+        @include centralisationPourItemsSeul(auto, auto);
+        display: block;
+        margin-top: 50px;
+  
+        input, button {
+          // @extend %hauteur-largeur-400;
+          @extend %centralisation-items-left-right;
+          padding: 20px 50px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          width: 100%;
+        }
+      }
+    }
+  
+    .temoignage__recherche {
+      background-color: rgb(192, 192, 192);
+      padding: 30px 20px;
+      @include hauteurLargeur(100%, 10px);
+      // @extend %centralisation-flex;
+      display: block;
+      p {
+        @include hauteurLargeur(600px, none);
+        @extend %centralisation-items-left-right;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      button {
+        @include hauteurLargeur(200px, none);
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 20px 50px;
+      }
+    }
+  }
+}
+
+
+
+
