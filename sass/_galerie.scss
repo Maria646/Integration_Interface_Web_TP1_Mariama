@@ -68,7 +68,6 @@
 
         .containerImageThree__galerie {
           align-self: flex-end;
-
           img {
             @extend %small-image-size;
           }
@@ -79,9 +78,9 @@
         @extend %flex-styles;
         grid-gap: 10px;
         align-self: flex-end;
-
         img {
           @extend %small-image-size;
+          align-self: flex-start;
         }
 
         .containerImageFive__galerie {
@@ -105,4 +104,5 @@
     }
   }
 }
+
 

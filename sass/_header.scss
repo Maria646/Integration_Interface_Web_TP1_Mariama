@@ -474,16 +474,18 @@ header {
     
             .logoText--header {
               font-size: 10px;
+              text-align: center;
             }
           }
         }
     
         .flexTwo__header {
           @include hauteurLargeur(100px, auto);
+          text-align: center;
           .menuList__header {
             @include centralisationAvecFlex(block, center, center);
             list-style: none;
-    
+            text-align: center;
             a {
               text-decoration: none;
               color: black;
@@ -499,7 +501,6 @@ header {
     
               i {
               }
-    
               .sousMenuListOne__header {
                 position: relative;
                 display: none;
@@ -544,13 +545,14 @@ header {
             .menuListThree__header {
               margin-top: 10px;
               margin-bottom: 10px;
+              text-align: center;
               a {
               }
             }
     
             .menuListFour__header {
               margin-top: 10px;
-              margin-bottom: 10px;
+              margin-bottom: 10px
     
               a {
               }

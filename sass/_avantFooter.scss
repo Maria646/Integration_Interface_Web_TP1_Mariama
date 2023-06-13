@@ -1,13 +1,13 @@
 @import "fonctions";
 
 %logo-styles {
-  border: 2px solid white;
   @include hauteurLargeur(100px, 40px);
   @include centralisationPourItemsSeul(auto, auto);
   margin-bottom: 20px;
 
   img {
     @include hauteurLargeur(100px, 10px);
+    border-radius: 50%;
   }
 }
 
@@ -18,7 +18,7 @@
 .avantFooter {
   padding: 5%;
   @include centralisationAvecFlex(flex, center, center);
-  height: 150px;
+  height: 250px;
 
   .container__avantFooter {
     .logo__avantFooter {
@@ -31,6 +31,35 @@
 
       li {
         @extend %list-item-styles;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .avantFooter {
+    padding: 5%;
+    @include centralisationAvecFlex(flex, center, center);
+    height: 300px;
+  
+    .container__avantFooter {
+      .logo__avantFooter {
+        img{
+          width: 50px;
+          border-radius: 50%;
+        }
+      }
+  
+      .menu-list__avantFooter {
+        display: block;
+        list-style: none;
+        margin-right: 50px;
+        text-align: center;
+        li {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
       }
     }
   }

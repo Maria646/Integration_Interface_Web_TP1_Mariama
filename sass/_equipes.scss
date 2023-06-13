@@ -48,13 +48,10 @@
 .equipes {
   @extend %padding;
   @extend %flex-center;
-
   .container__equipes {
-    @extend %container-styles;
 
     .description__equipes {
       @extend %text-center;
-
       h2 {
         margin-bottom: 5%;
       }
@@ -106,9 +103,82 @@
 }
 
 
-@media only screen and (max-width: 450px) {
-  .flexEmployers__equipes {
-    display: block;
-    width: 100%;
-  }
-}
+@media only screen and (max-width: 950px) {
+  .equipes {
+    @extend %padding;
+    @extend %flex-center;
+    .container__equipes {
+      // @extend %container-styles;
+
+      .description__equipes {
+        @extend %text-center;
+        h2 {
+          margin-bottom: 5%;
+        }
+  
+        p {
+        }
+      }
+  
+      .flexEmployers__equipes {
+        display: block;
+
+  
+        .employers {
+          @extend %employer-styles;
+        }
+  
+        .employerOne__equipes {
+          .photoEmployerOne__equipes {
+            width: 100%;
+            height: 80px;
+            border: none;
+            img{
+              width: 100%;
+            }
+          }
+  
+          @extend %info-styles;
+        }
+  
+        .employerTwo__equipes {
+          .photoEmployerTwo__equipes {
+            width: 100%;
+            height: 80px;
+            border: none;
+            img{
+              width: 100%;
+            }
+          }
+  
+          @extend %info-styles;
+        }
+  
+        .employerThree__equipes {
+          .photoEmployerThree__equipes {
+            width: 100%;
+            height: 80px;
+            border: none;
+            img{
+              width: 100%;
+            }
+          }
+  
+          @extend %info-styles;
+        }
+  
+        .employerFour__equipes {
+          .photoEmployerFour__equipes {
+            width: 100%;
+            height: 80px;
+            border: none;
+            img{
+              width: 100%;
+            }
+          }
+  
+          @extend %info-styles;
+        }
+      }
+    }
+  }}

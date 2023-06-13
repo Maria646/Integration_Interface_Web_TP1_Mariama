@@ -49,3 +49,49 @@
         } 
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .footer{
+        padding: 5%;
+        .container__footer{
+            @include hauteurLargeur(400px, auto);
+            @include centralisationAvecFlex(block, center, center);
+            @include centralisationPourItemsSeul(auto, auto);
+            .auteur__footer{
+                width: 100%;
+                @extend %taille-container;
+                h5{
+    
+                }
+            }
+            .reseaux-sociaux__footer{
+                width: 100%;
+                @extend %taille-container;
+                i{
+    
+                }
+            }
+            .coordonnees__footer{
+                @include centralisationAvecFlex(flex, center, center);
+                width: 100%;
+                .telephonneCoordonnees__footer{
+                    i{
+    
+                    }
+                    h6{
+    
+                    }
+                }
+                .emailCoordonnees__footer{
+                    @extend %espacement-entre-items;
+                    i{
+    
+                    }
+                    h6{
+    
+                    }
+                }
+            } 
+        }
+    }
+}
